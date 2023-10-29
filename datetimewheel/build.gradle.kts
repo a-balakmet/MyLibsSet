@@ -54,7 +54,7 @@ fun getVersionName(): String {
 }
 
 fun getLibGroupId(): String {
-    return "aab.lib"
+    return "aab.libraries.set"
 }
 
 fun getLibArtifactId(): String {
