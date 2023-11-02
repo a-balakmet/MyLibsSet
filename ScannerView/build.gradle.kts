@@ -46,7 +46,7 @@ val githubProperties = Properties()
 githubProperties.load(FileInputStream(rootProject.file("github.properties")))
 
 fun getVersionName(): String {
-    return "1.0.0"
+    return "1.0.1"
 }
 
 fun getLibGroupId(): String {
@@ -119,5 +119,5 @@ dependencies {
     implementation("androidx.camera:camera-view:$cameraVersion")
     implementation("com.google.mlkit:barcode-scanning:17.2.0")
 
-    implementation("aab.libraries.set:commons:1.0.0")
+    implementation("aab.libraries.set:commons:1.0.2")
 }

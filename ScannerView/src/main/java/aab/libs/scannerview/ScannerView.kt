@@ -77,9 +77,9 @@ fun ScannerView(
     } else if (cameraPermissionState.status.shouldShowRationale) {
         TwoButtonsDialog(
             messageText = noPermissionText,
-            leftButton = okText, rightButton = noText,
-            onClickLeft = { activity.openAppSettings() },
-            onClickRight = { onScanComplete("") }
+            leftButton = noText, rightButton = okText,
+            onClickLeft = { onScanComplete("")  },
+            onClickRight = { activity.openAppSettings() }
         )
     } else {
         SideEffect {
