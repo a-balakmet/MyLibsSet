@@ -11,6 +11,7 @@ import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
+import androidx.compose.material3.VerticalDivider
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -58,7 +59,9 @@ fun TwoButtonsDialog(
                 }
                 Text(
                     text = messageText,
-                    modifier = Modifier.padding(start = 16.dp, top = if (titleText == null ) 16.dp else 0.dp, end = 16.dp, bottom = 16.dp).align(Alignment.CenterHorizontally),
+                    modifier = Modifier
+                        .padding(start = 16.dp, top = if (titleText == null) 16.dp else 0.dp, end = 16.dp, bottom = 16.dp)
+                        .align(Alignment.CenterHorizontally),
                     style = messageStyle,
                     color = Color.Black,
                     textAlign = TextAlign.Center
@@ -78,6 +81,7 @@ fun TwoButtonsDialog(
                         style = titleStyle,
                         color = Color.Blue
                     )
+                    VerticalDivider(color = Color.Blue)
                     Text(
                         text = rightButton,
                         modifier = Modifier.clickable {
