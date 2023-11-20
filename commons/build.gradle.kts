@@ -107,9 +107,9 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-    implementation("androidx.compose.material3:material3:1.2.0-alpha10")
+    implementation("androidx.compose.material3:material3:1.2.0-alpha11")
 
-    val composeVersion = "1.6.0-alpha08"
+    val composeVersion = "1.6.0-beta01"
     implementation("androidx.compose.ui:ui:$composeVersion")
     implementation("androidx.compose.ui:ui-tooling-preview:$composeVersion")
     debugImplementation("androidx.compose.ui:ui-tooling:$composeVersion")
@@ -121,11 +121,11 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-runtime-compose:$lifecycleVer")
 
     // Navigation for compose
-    val navVersion = "2.7.4"
+    val navVersion = "2.7.5"
     implementation("androidx.navigation:navigation-compose:$navVersion")
 
     //Ktor dependencies
-    val ktorVersion = "2.3.5"
+    val ktorVersion = "2.3.6"
     implementation("io.ktor:ktor-client-core:$ktorVersion")
     // HTTP engine: The HTTP client used to perform network requests.
     implementation("io.ktor:ktor-client-android:$ktorVersion")
@@ -141,7 +141,7 @@ dependencies {
     implementation("io.ktor:ktor-client-auth:$ktorVersion")
 
     // Data store
-    val datastoreVersion = "1.1.0-alpha05"
+    val datastoreVersion = "1.1.0-alpha06"
     implementation("androidx.datastore:datastore-preferences:$datastoreVersion")
 
     // Room
@@ -165,10 +165,10 @@ dependencies {
     // optional - Paging 3 Integration
     implementation("androidx.room:room-paging:$roomVersion")
 
-    implementation("com.googlecode.libphonenumber:libphonenumber:8.13.24")
+    implementation("com.googlecode.libphonenumber:libphonenumber:8.13.25")
 
     // This lib enables to use LocalDateTime in SDK < 26
-    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.3")
+    coreLibraryDesugaring("com.android.tools:desugar_jdk_libs:2.0.4")
 
     // Shared preferences
     val preferenceVer = "1.2.1"

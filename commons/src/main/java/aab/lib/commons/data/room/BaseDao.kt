@@ -3,6 +3,7 @@ package aab.lib.commons.data.room
 import androidx.room.*
 import androidx.sqlite.db.SimpleSQLiteQuery
 import androidx.sqlite.db.SupportSQLiteQuery
+import kotlinx.coroutines.flow.Flow
 
 abstract class BaseDao <T: BaseEntity>(private val tableName: String) {
 
@@ -46,13 +47,13 @@ abstract class BaseDao <T: BaseEntity>(private val tableName: String) {
         return getAll(query)
     }
 
-//    @RawQuery
-//    protected abstract suspend fun emitAll(query: SupportSQLiteQuery) : Flow<List<T>>
-//
-//    suspend fun emitAll(): Flow<List<T>> {
-//        val query = SimpleSQLiteQuery("SELECT * FROM $tableName")
-//        return emitAll(query)
-//    }
+    @RawQuery
+    protected abstract suspend fun emitAll(query: SupportSQLiteQuery) : Flow<List<T>>
+
+    suspend fun emitAll(): Flow<List<T>> {
+        val query = SimpleSQLiteQuery("SELECT * FROM $tableName")
+        return emitAll(query)
+    }
 
     @RawQuery
     protected abstract suspend fun getItemById(query: SupportSQLiteQuery): T?
