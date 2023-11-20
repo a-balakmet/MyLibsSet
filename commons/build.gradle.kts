@@ -60,7 +60,7 @@ val githubProperties = Properties()
 githubProperties.load(FileInputStream(rootProject.file("github.properties")))
 
 fun getVersionName(): String {
-    return "1.0.5"
+    return "1.0.6"
 }
 
 fun getLibGroupId(): String {

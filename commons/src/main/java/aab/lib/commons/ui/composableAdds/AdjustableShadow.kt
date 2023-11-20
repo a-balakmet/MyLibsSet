@@ -1,4 +1,4 @@
-package aab.lib.commons.ui.composable_adds
+package aab.lib.commons.ui.composableAdds
 
 import android.graphics.BlurMaskFilter
 import androidx.compose.ui.Modifier

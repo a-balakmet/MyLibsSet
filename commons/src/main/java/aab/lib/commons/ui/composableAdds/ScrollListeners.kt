@@ -1,4 +1,4 @@
-package aab.lib.commons.ui.composable_adds
+package aab.lib.commons.ui.composableAdds
 
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.grid.LazyGridState

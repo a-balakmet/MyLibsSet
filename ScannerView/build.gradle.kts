@@ -119,5 +119,5 @@ dependencies {
     implementation("androidx.camera:camera-view:$cameraVersion")
     implementation("com.google.mlkit:barcode-scanning:17.2.0")
 
-    implementation("aab.libraries.set:commons:1.0.2")
+    implementation("aab.libraries.set:commons:1.0.6")
 }

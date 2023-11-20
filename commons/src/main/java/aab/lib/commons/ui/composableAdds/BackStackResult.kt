@@ -1,4 +1,4 @@
-package aab.lib.commons.ui.composable_adds
+package aab.lib.commons.ui.composableAdds
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavController
