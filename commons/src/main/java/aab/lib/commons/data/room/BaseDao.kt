@@ -48,14 +48,6 @@ abstract class BaseDao <T: BaseEntity>(private val tableName: String) {
     }
 
     @RawQuery
-    protected abstract suspend fun emitAll(query: SupportSQLiteQuery) : Flow<List<T>>
-
-    suspend fun emitAll(): Flow<List<T>> {
-        val query = SimpleSQLiteQuery("SELECT * FROM $tableName")
-        return emitAll(query)
-    }
-
-    @RawQuery
     protected abstract suspend fun getItemById(query: SupportSQLiteQuery): T?
 
     suspend fun getItemById(itemId: Int): T? {
